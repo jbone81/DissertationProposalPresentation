@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Presentation"] 1769916962.16555 "Presentation.bcf" "Presentation.bbl" "Presentation" 1769916981.02643 0
-  "Presentation.bcf" 1769916980.7032 107855 425101307b4f8ca4745dfc029b4b8434 "pdflatex"
+["biber Presentation"] 1769916962.16555 "Presentation.bcf" "Presentation.bbl" "Presentation" 1770087954.14934 0
+  "Presentation.bcf" 1770087953.86526 107855 425101307b4f8ca4745dfc029b4b8434 "pdflatex"
   "Reference.bib" 1769913186 55897 4a1c7fa4059920a8b6e0dfe71633c3de ""
   (generated)
   "Presentation.bbl"
   "Presentation.blg"
   (rewritten before read)
-["pdflatex"] 1769916974.548 "/Users/johnbonar/Library/CloudStorage/OneDrive-DakotaStateUniversity/Dissertation/Presentation/Presentation.tex" "Presentation.pdf" "Presentation" 1769916981.02695 0
-  "/Users/johnbonar/Library/CloudStorage/OneDrive-DakotaStateUniversity/Dissertation/Presentation/Presentation.tex" 1769915281.0104 28284 3b1f2108495dcdd33dc2785d3a19c20c ""
+["pdflatex"] 1770087948.21515 "/Users/johnbonar/Library/CloudStorage/OneDrive-DakotaStateUniversity/Dissertation/Presentation/Presentation.tex" "Presentation.pdf" "Presentation" 1770087954.14975 0
+  "/Users/johnbonar/Library/CloudStorage/OneDrive-DakotaStateUniversity/Dissertation/Presentation/Presentation.tex" 1770087944.20248 28527 b374cfbde09e5aceae00bb814f33300e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -34,6 +34,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1136768653 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -49,6 +50,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1248133631 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -256,12 +258,12 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1769888623 3636351 de505cea13e1010dcaa8326f73b88cb0 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "DSULogo.png" 1769913186 111554 207534bd95e640a4cae52990d3e1c20d ""
-  "Presentation.aux" 1769916980.69379 23570 5df033c135b7be2f71ea41b52480d84a "pdflatex"
+  "Presentation.aux" 1770087953.86046 23570 5df033c135b7be2f71ea41b52480d84a "pdflatex"
   "Presentation.bbl" 1769916967.44189 235047 836782d6aef80ba2d903ff5d860f8cba "biber Presentation"
-  "Presentation.nav" 1769916980.70516 7388 006720db9f7ef2dd0c75cbe2d87aba6b "pdflatex"
-  "Presentation.out" 1769916980.70038 1364 5c006375c68af5164f19ccde0388b3c1 "pdflatex"
-  "Presentation.run.xml" 1769916980.70493 2457 b575739dc83674f3e1ba4351ec5554dd "pdflatex"
-  "Presentation.tex" 1769915281.0104 28284 3b1f2108495dcdd33dc2785d3a19c20c ""
+  "Presentation.nav" 1770087953.86655 7388 006720db9f7ef2dd0c75cbe2d87aba6b "pdflatex"
+  "Presentation.out" 1770087953.86375 1364 5c006375c68af5164f19ccde0388b3c1 "pdflatex"
+  "Presentation.run.xml" 1770087953.86642 2457 b575739dc83674f3e1ba4351ec5554dd "pdflatex"
+  "Presentation.tex" 1770087944.20248 28527 b374cfbde09e5aceae00bb814f33300e ""
   (generated)
   "Presentation.aux"
   "Presentation.bcf"
