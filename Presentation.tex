@@ -60,7 +60,7 @@ Madison, South Dakota, United States}
     Digital Engineering has transformed how the Department of Defense, NASA, and the aerospace industry design, develop, and sustain complex systems. This research investigates whether IT and Information Assurance professionals recognize the potential that Digital Engineering capabilities hold for their work.
 
     \vspace{0.3cm}
-    This study employs quantitative survey methodology to establish baseline empirical data regarding professional awareness and perceived value. The findings shall inform strategic decisions regarding future research investment, industry adoption initiatives, and academic curricula development.
+    Systematic literature review documents a near-complete absence of academic research applying these proven methods to enterprise IT infrastructure or Information Assurance programs. This study employs quantitative survey methodology to establish baseline empirical data regarding professional awareness and perceived value. The findings shall inform strategic decisions regarding future research investment, industry adoption initiatives, and academic curricula development.
   \end{small}
 \end{frame}
 
@@ -73,6 +73,7 @@ Madison, South Dakota, United States}
     \item Digital Engineering Foundations
     \item Research Methodology
     \item Survey Design and Instrument
+    \item Analytical Approach and Rigor
     \item Timeline and Schedule
     \item Expected Contributions
     \item Questions and Discussion
@@ -418,6 +419,7 @@ Madison, South Dakota, United States}
       \item Minimum required: 385 completed responses
       \item Target with oversampling: 450 completed responses
       \item Oversampling accommodates 10-15\% incomplete response rates
+      \item Requires distribution to approximately 1,500--1,800 professionals
     \end{itemize}
   \end{block}
 \end{frame}
@@ -431,7 +433,7 @@ Madison, South Dakota, United States}
       \item Understanding of Digital Engineering Capabilities (6 questions)
       \item Applicability of Digital Engineering (6 questions)
       \item Value Assessment for Information Technology (5 questions)
-      \item Value Assessment for Information Assurance (7 questions)
+      \item Value Assessment for Information Assurance and Cybersecurity (7 questions)
       \item Interest and Demographic Information (4 questions)
     \end{enumerate}
   \end{block}
@@ -458,7 +460,22 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 30: Research Question Mapping
+% SLIDE 30: Likert Scale Analytical Treatment
+\begin{frame}{Likert Scale Analytical Treatment}
+  \begin{block}{The Ordinal--Interval Debate}
+    Longstanding methodological debate regarding whether Likert responses constitute ordinal or interval data. Norman (2010) and subsequent research demonstrate that parametric methods yield valid results with Likert data even when distributional assumptions are violated.
+  \end{block}
+
+  \begin{block}{Dual-Reporting Approach}
+    \begin{itemize}
+      \item \textbf{Parametric:} Means and standard deviations reported for composite scores and cross-study comparison
+      \item \textbf{Non-parametric:} Medians and interquartile ranges reported alongside for individual Likert items
+      \item Enables readers holding either position to evaluate findings against their preferred framework
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% SLIDE 31: Research Question Mapping
 \begin{frame}{Survey-to-Research Question Mapping}
   \begin{table}[H]
     \begin{scriptsize}
@@ -468,7 +485,7 @@ Madison, South Dakota, United States}
         \midrule
         Section 1: Awareness & 1.1, 1.2 & RQ1: Awareness \\
         Section 2: Understanding & 2.1--2.6 & RQ1: Awareness \\
-        Section 3: Applicability & 3.1--3.6 & RQ2: Perceived Value \\
+        Section 3: Applicability & 3.1--3.6 & RQ2 / RQ3 \\
         Section 4: IT Value & 4.1--4.5 & RQ3: Anticipated Benefits \\
         Section 5: IA Value & 5.1--5.7 & RQ3: Anticipated Benefits \\
         Section 6: Demographics & 6.1--6.4 & Subgroup Analysis \\
@@ -481,8 +498,8 @@ Madison, South Dakota, United States}
   Each question maintains explicit traceability to research questions within the systems engineering model.
 \end{frame}
 
-% SLIDE 31: Data Analysis
-\begin{frame}{Data Analysis Approach}
+% SLIDE 32: Data Analysis - Descriptive
+\begin{frame}{Data Analysis: Descriptive and Comparative}
   \begin{block}{Descriptive Statistics}
     \begin{itemize}
       \item Central tendency and dispersion for all Likert-scale responses
@@ -500,7 +517,25 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 32: Research Timeline
+% SLIDE 33: Data Analysis - Inferential and Error Management
+\begin{frame}{Data Analysis: Inferential Testing and Error Management}
+  \begin{block}{Inferential Statistical Tests}
+    \begin{itemize}
+      \item Parametric (t-tests, ANOVA) or non-parametric alternatives (Mann-Whitney U, Kruskal-Wallis) based on Shapiro-Wilk normality assessment
+      \item Chi-square tests of independence for categorical associations
+      \item Effect sizes reported: Cohen's d for group comparisons, Cram\'{e}r's V for chi-square
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Multiple Comparison Correction}
+    \begin{itemize}
+      \item Holm-Bonferroni sequential correction applied within logical families of related tests
+      \item Effect size assessment ensures observed differences reflect practically meaningful magnitudes
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% SLIDE 34: Research Timeline
 \section{Timeline}
 \begin{frame}{Research Timeline: 22-Month Schedule}
   \begin{center}
@@ -510,32 +545,33 @@ Madison, South Dakota, United States}
           hgrid,
           time slot format=isodate-yearmonth,
           time slot unit = month,
-        ]{2025-06}{2027-03}
+        ]{2025-05}{2027-04}
         \gantttitlecalendar{year, month} \\
-        \ganttgroup{Proposal}{2025-06}{2026-03} \\
-        \ganttbar{Committee Formation}{2025-06}{2025-08} \\
+        \ganttgroup{Proposal}{2025-05}{2026-03} \\
+        \ganttbar{Committee Formation}{2025-05}{2025-08} \\
         \ganttbar{Write Proposal}{2025-09}{2026-03} \\
         \ganttmilestone{Proposal Defense}{2026-03} \\
-        \ganttgroup{Survey}{2026-04}{2026-11} \\
+        \ganttgroup{Survey}{2026-04}{2026-10} \\
         \ganttbar{IRB Approval}{2026-04}{2026-04} \\
         \ganttbar{Survey Execution}{2026-05}{2026-08} \\
-        \ganttbar{DataAnalysis}{2026-09}{2026-11} \\
+        \ganttbar{Data Analysis}{2026-09}{2026-10} \\
+        \ganttmilestone{Research Complete}{2026-10} \\
         \ganttgroup{Dissertation}{2026-11}{2027-03} \\
-        \ganttbar{Write Dissertaion}{2026-11}{2027-02} \\
+        \ganttbar{Write Dissertation}{2026-11}{2027-02} \\
         \ganttmilestone{Final Defense}{2027-03}
       \end{ganttchart}
     }
   \end{center}
 \end{frame}
 
-% SLIDE 33: Timeline Details
+% SLIDE 35: Timeline Details
 \begin{frame}{Timeline Phase Details}
-  \begin{block}{Phase 1--3: Proposal (May 2025 -- April 2026)}
-    Committee formation, proposal development, proposal defense, IRB approval
+  \begin{block}{Phase 1--2: Proposal (May 2025 -- March 2026)}
+    Committee formation, proposal development, proposal defense
   \end{block}
 
-  \begin{block}{Phase 4: Survey Execution (May -- August 2026)}
-    Platform configuration, recruitment through multiple professional channels, data collection targeting 450 responses
+  \begin{block}{Phase 3--4: IRB and Survey Execution (April -- August 2026)}
+    IRB approval, platform configuration, recruitment through multiple professional channels, data collection targeting 450 responses
   \end{block}
 
   \begin{block}{Phase 5--6: Analysis and Writing (September 2026 -- March 2027)}
@@ -543,7 +579,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 34: Validity and Reliability
+% SLIDE 36: Validity and Reliability
 \begin{frame}{Validity and Reliability}
   \begin{block}{Content Validity}
     Systematic mapping of survey questions to research questions; alignment with established Digital Engineering frameworks from INCOSE, NASA, and DoD
@@ -558,7 +594,45 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 35: Limitations
+% SLIDE 37: Pilot Testing
+\begin{frame}{Pilot Testing and Instrument Refinement}
+  \begin{block}{Spring 2024 Pilot Study}
+    An earlier version of the instrument was administered to IT and information assurance professionals during the Spring 2024 semester. The pilot study evaluated:
+    \begin{itemize}
+      \item Question clarity and comprehension among target population representatives
+      \item Completion time and respondent fatigue
+      \item Response distribution across scale points (no floor or ceiling effects observed)
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Empirical Contributions to Instrument Design}
+    \begin{itemize}
+      \item Question wording refined to balance context with priming avoidance
+      \item Section ordering adjusted: awareness before value assessment for cognitive progression
+      \item Confirmed substantial variation in Digital Engineering awareness across respondents
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% SLIDE 38: Response Bias Mitigation
+\begin{frame}{Response Bias Mitigation}
+  \begin{block}{Proactive Mitigation Strategies}
+    \begin{itemize}
+      \item \textbf{Self-selection bias:} Recruitment messaging encourages participation across the awareness spectrum; no prior Digital Engineering knowledge required
+      \item \textbf{Acquiescence bias:} Neutral midpoint option and explicit ``No'' / ``Unsure'' options on investment willingness questions
+      \item \textbf{Social desirability:} Anonymous design with no personally identifiable information
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Analytical Safeguards}
+    \begin{itemize}
+      \item Wave analysis comparing early and late respondents to assess non-response bias
+      \item Familiarity-stratified comparison of value perceptions to diagnose potential priming effects from contextual descriptions
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% SLIDE 39: Limitations
 \begin{frame}{Research Limitations}
   \begin{itemize}
     \item Non-probability sampling limits generalizability to broader population
@@ -570,7 +644,7 @@ Madison, South Dakota, United States}
   \end{itemize}
 \end{frame}
 
-% SLIDE 36: Expected Contributions - Academic
+% SLIDE 40: Expected Contributions - Academic
 \section{Expected Contributions}
 \begin{frame}{Expected Contributions: Academic}
   \begin{block}{Addressing the Literature Gap}
@@ -586,26 +660,38 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 37: Expected Contributions - Industry
-\begin{frame}{Expected Contributions: Industry and Society}
+% SLIDE 41: Expected Contributions - Industry
+\begin{frame}{Expected Contributions: Industry}
   \begin{block}{Industry Benefits}
     \begin{itemize}
       \item Informs tool vendor and service provider development priorities
       \item Guides professional development and training initiatives
       \item Identifies which DE capabilities professionals recognize as addressing their needs
+      \item Indicates whether adoption initiatives would find receptive audiences
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% SLIDE 42: Expected Contributions - Commonwealth and Society
+\begin{frame}{Expected Contributions: Commonwealth and Society}
+  \begin{block}{Commonwealth Benefits}
+    \begin{itemize}
+      \item Enhances protection of government systems and critical infrastructure
+      \item Enables rapid, accurate impact assessment for security incidents affecting federal and national security systems
+      \item Reduces compliance verification burden while improving documentation currency
     \end{itemize}
   \end{block}
 
   \begin{block}{Societal Benefits}
     \begin{itemize}
-      \item Enhances protection of government systems and critical infrastructure
       \item Potentially enables better security capabilities for organizations serving underserved populations
       \item Democratizes sophisticated documentation capabilities beyond large enterprises
+      \item May reduce compliance burden for resource-constrained organizations serving communities with limited resources
     \end{itemize}
   \end{block}
 \end{frame}
 
-% SLIDE 38: Ethical Considerations
+% SLIDE 43: Ethical Considerations
 \begin{frame}{Ethical Considerations}
   \begin{block}{Human Subjects Protection}
     \begin{itemize}
@@ -621,7 +707,7 @@ Madison, South Dakota, United States}
   IRB approval will proceed after successful proposal defense.
 \end{frame}
 
-% SLIDE 39: Summary
+% SLIDE 44: Summary
 \begin{frame}{Proposal Summary}
   \begin{block}{Research Purpose}
     Investigate whether IT and Information Assurance professionals recognize potential value in Digital Engineering capabilities for their work
@@ -636,7 +722,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 40: Questions
+% SLIDE 45: Questions
 \section{Q\&A}
 \begin{frame}{Questions and Discussion}
   \begin{center}
@@ -656,7 +742,7 @@ Madison, South Dakota, United States}
   \end{center}
 \end{frame}
 
-% SLIDE 41: Thank You
+% SLIDE 46: Thank You
 \begin{frame}{Thank You}
   \begin{center}
     \vspace{0.5cm}
