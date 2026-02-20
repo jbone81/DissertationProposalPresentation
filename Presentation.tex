@@ -44,32 +44,34 @@ Madison, South Dakota, United States}
 \end{frame}
 
 % SLIDE 3: About Me
-\begin{frame}{About the Researcher}
+\begin{frame}{/whois John Bonar}
   \begin{itemize}
     \item Seven Degrees and Certifications from Dakota State University
     \item Senior Manager Solution Engineering \& Architecture, Program Work Environments, Digital Technology at Collins Aerospace (RTX)
     \item Daily experience with high-compliance environments: DAAG, JSIG, CNSS, CSFC, CDS
     \item Research Focus: Systems Engineering for IT and Information Assurance
-    \item First Computer: Commodore 64
+    \item First Computer: Commodore 64K
     \item First computer job: 1994 CCS Computers Burlington, Iowa
     \item Caught a 30 day ban from Ames Lab at age 15 for locking up a Cray YMP2E with a massive ray tracing simulation
+    \item Is Darth Vader, legally
     \end{itemize}
 \end{frame}
 
 % SLIDE 4: Abstract
 \begin{frame}{Research Abstract}
   \begin{small}
-    Digital Engineering has transformed how the Department of Defense, NASA, and the aerospace industry design, develop, and sustain complex systems. Its four pillars---MBSE, digital threads, digital twin, and Product Lifecycle Management---have delivered measurable improvements in mission assurance, configuration management, and lifecycle governance.
+    Digital Engineering has transformed how the Department of War, NASA, and the aerospace industry design, develop, and sustain complex systems. Its four pillars---MBSE, digital threads, digital twin, and Product Lifecycle Management---have delivered measurable improvements in mission assurance, configuration management, and lifecycle governance.
 
     \vspace{0.3cm}
-    Despite this proven operational value, these methods remain virtually untested within enterprise IT and information assurance domains. Systematic literature review documents a near-complete absence of academic research applying these proven methods to enterprise IT infrastructure or Information Assurance programs. This study employs quantitative survey methodology to establish baseline empirical data regarding professional awareness and perceived value.
+    Despite this proven operational value, these methods remain virtually untested within enterprise IT and information assurance domains, where expanding compliance obligations---including the NIST Risk Management Framework and the Cybersecurity Maturity Model Certification---impose documentation, traceability, and verification demands that current practices fail to sustain. This study employs quantitative survey methodology to establish baseline empirical data regarding professional awareness and perceived value.
   \end{small}
 \end{frame}
 
 % SLIDE 5: Agenda
-\begin{frame}{Presentation Agenda}
+\begin{frame}[allowframebreaks]{Presentation Agenda}
   \begin{enumerate}
     \item Problem Statement and Research Context
+    \item Expanding Compliance Landscape
     \item Research Questions
     \item Digital Engineering Foundations (Chapter 1)
     \item Literature Review: Analytical Synthesis (Chapter 2)
@@ -84,7 +86,7 @@ Madison, South Dakota, United States}
 
 % SLIDE 6: Opening Scenario
 \section{Problem Statement}
-\begin{frame}{The Visibility Crisis: A Real-World Scenario}
+\begin{frame}[allowframebreaks]{The Visibility Crisis: A Real-World Scenario}
   \begin{block}{Federal Incident Response: Late 2023}
     When a vulnerability surfaced within federal information systems, security teams raced to identify every affected component. Weeks passed while agencies struggled to map the blast radius of potential compromise.
   \end{block}
@@ -94,7 +96,7 @@ Madison, South Dakota, United States}
 \end{frame}
 
 % SLIDE 7: Current State Overview
-\begin{frame}{Current State of Information System Management}
+\begin{frame}[allowframebreaks]{Current State of Information System Management}
   \begin{block}{Environmental Complexity}
     Organizations operate within relentless technological evolution: cloud computing, microservices, IoT devices, and operational technology have spawned intricate webs of interdependencies.
   \end{block}
@@ -105,17 +107,39 @@ Madison, South Dakota, United States}
 \end{frame}
 
 % SLIDE 8: Information Assurance Challenges
-\begin{frame}{Information Assurance Practice Challenges}
+\begin{frame}[allowframebreaks]{Information Assurance Practice Challenges}
   \begin{block}{Key Frameworks}
-    NIST SP 800-37 Rev 2: Risk Management Framework \\ ISO 31000: Risk Management \\ NIST Cybersecurity Framework
+    NIST SP 800-37 Rev 2: Risk Management Framework \\ ISO 31000: Risk Management \\ NIST Cybersecurity Framework 2.0
   \end{block}
 
   \vspace{0.2cm}
   \textbf{Critical Challenge:} The RMF continuous monitoring requirement exposes limitations of document-centric approaches most directly. Organizations attempting continuous monitoring through manual processes discover the labor exceeds available resources.
 \end{frame}
 
-% SLIDE 9: IT Service Management Challenges
-\begin{frame}{IT Service Management Practice Challenges}
+% SLIDE 9: Expanding Compliance Landscape
+\begin{frame}[allowframebreaks]{The Expanding Compliance Landscape}
+  \begin{block}{NIST Cybersecurity Framework 2.0 (February 2024)}
+    Added Govern Function addressing leadership engagement and risk strategy. Broadened scope beyond critical infrastructure to all organizations. Maps to SP~800-53 controls through Informative References.
+  \end{block}
+
+  \begin{block}{SP 800-171 Revision 3 (May 2024)}
+    Protects Controlled Unclassified Information in nonfederal systems. Restructured from fourteen to seventeen security requirement families. 97 requirements encompassing 266 individual control items and 49 Organization-Defined Parameters.
+  \end{block}
+
+  \begin{block}{SP 800-172: Enhanced Security Requirements}
+    Thirty-five enhanced requirements against Advanced Persistent Threats. Three-pillar defense: penetration-resistant architecture, damage-limiting operations, and cyber resiliency.
+  \end{block}
+
+  \begin{block}{CMMC 2.0 (December 2024)}
+    Three-tiered certification: Level 1 self-assessment, Level 2 third-party assessment (SP~800-171), Level 3 government assessment (SP~800-172). Shifts from self-attestation to verified compliance. Full implementation expected by November 2028.
+  \end{block}
+
+  \vspace{0.2cm}
+  \textbf{Key Insight:} Escalating documentation, traceability, and verification demands that Digital Engineering capabilities are designed to address.
+\end{frame}
+
+% SLIDE 10: IT Service Management Challenges
+\begin{frame}[allowframebreaks]{IT Service Management Practice Challenges}
   \begin{block}{ITIL Framework Dependencies}
     Service Strategy | Service Design | Service Transition | Service Operation | Continual Service Improvement
   \end{block}
@@ -124,8 +148,8 @@ Madison, South Dakota, United States}
   \textbf{Critical Challenge:} Configuration Management Database implementations depend upon accuracy and currency of underlying information---accuracy that organizations consistently fail to achieve. Change management processes suffer when impact assessments rely upon incomplete dependency information.
 \end{frame}
 
-% SLIDE 10: Industry Statistics - Visibility Gaps
-\begin{frame}{Evidence: Visibility and Documentation Failures}
+% SLIDE 11: Industry Statistics - Visibility Gaps
+\begin{frame}[allowframebreaks]{Evidence: Visibility and Documentation Failures}
   \begin{table}[H]
     \begin{scriptsize}
       \begin{tabular}{@{}lll@{}}
@@ -144,14 +168,15 @@ Madison, South Dakota, United States}
         CMDB implementation failure rate & 80\% & Gartner Research \\
         Outages from configuration issues & 64\% & Uptime Institute 2023 \\
         Misconfigurations from parameter errors & 70-85\% & Yin et al. 2011 \\
+        Unplanned outages from ill-planned changes & 80\% & IT Process Institute \\
         \bottomrule
       \end{tabular}
     \end{scriptsize}
   \end{table}
 \end{frame}
 
-% SLIDE 11: Industry Statistics - Security Impact
-\begin{frame}{Evidence: Security Impact Metrics}
+% SLIDE 12: Industry Statistics - Security Impact
+\begin{frame}[allowframebreaks]{Evidence: Security Impact Metrics}
   \begin{table}[H]
     \begin{scriptsize}
       \begin{tabular}{@{}lll@{}}
@@ -161,12 +186,14 @@ Madison, South Dakota, United States}
         \multicolumn{3}{@{}c@{}}{\textit{Shadow IT and Undocumented Assets}} \\
         \midrule
         Shadow IT as percentage of IT spend & 30-40\% & Gartner Research \\
+        Employees using shadow IT (2022) & 41\% & Gartner Research \\
         Cloud services vs. IT estimates & 15-22x higher & Cisco 2016 \\
         Projected shadow IT usage (2027) & 75\% & Gartner Research \\
         \midrule
         \multicolumn{3}{@{}c@{}}{\textit{Security Impact Metrics}} \\
         \midrule
         Mean time to identify breach & 204 days & IBM/Ponemon 2024 \\
+        Breaches involving shadow data & 35\% & IBM/Ponemon 2025 \\
         Cloud breaches from misconfigurations & 82\% & Check Point 2024 \\
         Organizations with cloud breaches (18 mo) & 95\% & CSA 2024 \\
         Projected preventable cloud breaches (2027) & 99\% & Gartner Research \\
@@ -176,8 +203,8 @@ Madison, South Dakota, United States}
   \end{table}
 \end{frame}
 
-% SLIDE 12: Documentation Gap Reality
-\begin{frame}{The Documentation-Reality Gap}
+% SLIDE 13: Documentation Gap Reality
+\begin{frame}[allowframebreaks]{The Documentation-Reality Gap}
   The persistent gap between documentation and operational reality represents the common thread connecting failures across both domains:
 
   \begin{itemize}
@@ -190,9 +217,9 @@ Madison, South Dakota, United States}
   \textbf{Key Insight:} This gap undermines every process that depends upon accurate system information---which includes nearly all Information Assurance and IT Service Management activities. The problem lies not in execution but in inherent limitations of document-centric methodologies.
 \end{frame}
 
-% SLIDE 13: Research Questions
+% SLIDE 14: Research Questions
 \section{Research Questions}
-\begin{frame}{Research Questions}
+\begin{frame}[allowframebreaks]{Research Questions}
   \begin{small}
     \begin{block}{RQ1: Awareness}
       To what extent are information technology and information assurance professionals aware of Digital Engineering capabilities, including Model-Based Systems Engineering, digital threads, digital twin technologies, and Product Lifecycle Management principles?
@@ -208,8 +235,8 @@ Madison, South Dakota, United States}
   \end{small}
 \end{frame}
 
-% SLIDE 14: Research Gap
-\begin{frame}{Identified Research Gap}
+% SLIDE 15: Research Gap
+\begin{frame}[allowframebreaks]{Identified Research Gap}
   \begin{block}{The Literature Gap}
     Systematic literature review documents a near-complete absence of academic research applying proven MBSE and Digital Engineering methodologies to enterprise IT infrastructure, IT Service Management, or Information Assurance programs.
   \end{block}
@@ -221,12 +248,15 @@ Madison, South Dakota, United States}
   \textbf{Academic applications absent for:} Enterprise IT infrastructure, Information Assurance programs, IT Service Management.
 
   \vspace{0.2cm}
+  \textbf{Gap Validated:} Wooley \& Womack (2025) systematic literature review of Digital Engineering adoption, benefits, and challenges explicitly noted the absence of research addressing enterprise IT or Information Assurance applications.
+
+  \vspace{0.2cm}
   \textbf{Awareness Deficit:} Henderson, McDermott, \& Salado (2024) found that 22\% of \textit{systems engineering} professionals cannot clearly define MBSE. If awareness barriers persist within the originating discipline, their magnitude among IT/IA professionals demands empirical measurement.
 \end{frame}
 
-% SLIDE 15: Digital Engineering Introduction (Chapter 1 Foundation)
+% SLIDE 16: Digital Engineering Introduction (Chapter 1 Foundation)
 \section{Digital Engineering Foundations}
-\begin{frame}{Digital Engineering: Four Pillars}
+\begin{frame}[allowframebreaks]{Digital Engineering: Four Pillars}
   \begin{center}
     \textbf{Digital Engineering capabilities address the documentation-reality gap through four integrated pillars:}
   \end{center}
@@ -256,7 +286,7 @@ Madison, South Dakota, United States}
   \end{center}
 \end{frame}
 
-% SLIDE 16: MBSE
+% SLIDE 17: MBSE
 \begin{frame}[allowframebreaks]{Pillar 1: Model-Based Systems Engineering}
   \begin{small}
     \begin{block}{Definition}
@@ -279,7 +309,7 @@ Madison, South Dakota, United States}
   \end{small}
 \end{frame}
 
-% SLIDE 17: Digital Thread
+% SLIDE 18: Digital Thread
 \begin{frame}[allowframebreaks]{Pillar 2: Digital Thread}
   \begin{small}
     \begin{block}{Definition}
@@ -301,7 +331,7 @@ Madison, South Dakota, United States}
   \end{small}
 \end{frame}
 
-% SLIDE 18: Digital Twin
+% SLIDE 19: Digital Twin
 \begin{frame}[allowframebreaks]{Pillar 3: Digital Twin}
   \begin{small}
 
@@ -324,7 +354,7 @@ Madison, South Dakota, United States}
   \end{small}
 \end{frame}
 
-% SLIDE 19: PLM
+% SLIDE 20: PLM
 \begin{frame}[allowframebreaks]{Pillar 4: Product Lifecycle Management}
   \begin{small}
 
@@ -342,9 +372,9 @@ Madison, South Dakota, United States}
   \end{small}
 \end{frame}
 
-% SLIDE 20: Institutional Endorsement
+% SLIDE 21: Institutional Endorsement
 \begin{frame}[allowframebreaks]{Institutional Endorsement of Digital Engineering}
-  \begin{block}{Department of Defense}
+  \begin{block}{Department of War}
     DE Strategy (2018): Five strategic goals including authoritative source of truth. DoDI 5000.97 (2023) codifies DE as mandatory practice. SE Guidebook (2022) provides implementation guidance.
   \end{block}
 
@@ -361,7 +391,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 21: Enterprise Architecture Framework
+% SLIDE 22: Enterprise Architecture Framework
 \begin{frame}[allowframebreaks]{Enterprise Architecture: The Unified Architecture Framework}
   \begin{block}{UAF as Consolidating Standard}
     ISO/IEC 19540-1:2022 and ISO/IEC 19540-2:2022. Consolidated DoDAF, MODAF, NAF, and commercial frameworks. The specification asserts that 90\% of defense framework concepts prove equally applicable in commercial domains.
@@ -376,7 +406,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 22: Measured Evidence
+% SLIDE 23: Measured Evidence
 \begin{frame}[allowframebreaks]{Digital Engineering: Measured Evidence}
   \begin{block}{Return on Investment (Rogers \& Mitchell 2021)}
     Documented 18\% improvement in systems engineering efficiency and 9\% reduction in defects following MBSE adoption on a complex system-of-systems program. Such measured evidence remains rare but establishes empirical foundation.
@@ -395,31 +425,73 @@ Madison, South Dakota, United States}
   \textbf{Key Question:} Do IT and IA professionals recognize this potential value for their work?
 \end{frame}
 
-% SLIDE 23: Literature Review - Analytical Narrative (Chapter 2)
+% SLIDE 24: Literature Review - Analytical Narrative (Chapter 2)
 \section{Literature Review}
-\begin{frame}[allowframebreaks]{Literature Review: Three Central Arguments}
+\begin{frame}[allowframebreaks]{Literature Review: Four Interrelated Arguments}
   \begin{small}
-    Chapter 2 examines the research landscape through an analytical narrative organized around three interrelated arguments:
+    Chapter 2 examines the research landscape through an analytical synthesis organized around four interrelated arguments:
 
     \vspace{0.3cm}
-    \begin{block}{Argument 1: Value Demonstrated but Confined}
-      Digital Engineering has proven value in defense and aerospace---but adoption remains confined to originating sectors with minimal cross-disciplinary transfer.
+    \begin{block}{Argument 1: Disciplinary Silos}
+      Systems engineering, information assurance, cybersecurity, and IT service management evolved along independent academic and professional trajectories, creating structural barriers to cross-disciplinary methodological exchange.
     \end{block}
 
-    \begin{block}{Argument 2: Barriers Beyond Technical Merit}
-      Adoption barriers are perceptual and organizational, not merely technical. Perceived compatibility, complexity, trialability, and organizational structure mediate adoption decisions.
+    \begin{block}{Argument 2: The Evidence Paradox}
+      The evidence base for MBSE value remains disproportionately reliant upon perceived rather than measured outcomes, creating economic uncertainty that discourages adoption beyond established domains.
     \end{block}
 
-    \begin{block}{Argument 3: Parallel Gaps, Untested Solutions}
-      Enterprise IT and IA domains exhibit challenges structurally analogous to those Digital Engineering addresses---yet no research connects these parallel tracks.
+    \begin{block}{Argument 3: Perceptions Drive Adoption}
+      Adoption research demonstrates that perceptions---not objective technical merit---drive adoption decisions, yet no empirical data exist on how IT and IA professionals perceive Digital Engineering capabilities.
+    \end{block}
+
+    \begin{block}{Argument 4: Unfulfilled Requirements}
+      Compliance frameworks and ITSM standards explicitly require capabilities that Digital Engineering provides, yet current practices demonstrably fail to deliver them and no research connects these parallel tracks.
     \end{block}
   \end{small}
 \end{frame}
 
-% SLIDE 24: Adoption Barriers Evidence
-\begin{frame}[allowframebreaks]{Literature Review: Adoption Barriers and Dynamics}
+% SLIDE 25: Disciplinary Silos
+\begin{frame}[allowframebreaks]{Literature Review: Independent Disciplinary Evolution}
+  \begin{block}{Parallel Paths}
+    Each discipline developed its own academic identity, professional communities, curricular standards, and institutional frameworks---despite confronting remarkably similar challenges in documentation, traceability, configuration management, and lifecycle governance.
+  \end{block}
+
+  \begin{block}{Key Evidence}
+    \begin{itemize}
+      \item Systems engineering emerged from defense laboratories (Hossain 2020; Honour 2018)
+      \item Information assurance grew from national security policy and computing education (Maconachy 2001; Dark 2006)
+      \item Cybersecurity crystallized as a ``meta-discipline'' (Parrish 2018; CSEC 2017)
+      \item ITSM developed as a practitioner-driven domain with limited academic theorization (Iden 2013; MacLean 2023)
+    \end{itemize}
+  \end{block}
+
+  \vspace{0.2cm}
+  \textbf{Consequence:} No intellectual infrastructure exists to facilitate cross-disciplinary methodological exchange. Researchers publish in different journals, cite different theorists, and frame problems through different conceptual lenses.
+\end{frame}
+
+% SLIDE 26: Evidence Paradox
+\begin{frame}[allowframebreaks]{Literature Review: The Evidence Paradox}
+  \begin{block}{Perceived vs. Measured Value (Henderson \& Salado 2021)}
+    Approximately two-thirds of claimed MBSE benefits lack empirical measurement and instead rely upon perceived or referenced evidence. Organizations outside systems engineering discover that the literature offers abundant testimony but limited quantified outcomes upon which to build business cases.
+  \end{block}
+
+  \begin{block}{Measurement Deficit}
+    \begin{itemize}
+      \item Rogers \& Mitchell (2021) remains one of only two papers reporting measured MBSE ROI
+      \item Henderson (2023) developed measurement framework---deficit unresolved
+      \item Campo (2023) confirmed persistent gap between beliefs and published evidence
+      \item Wooley \& Womack (2025) confirmed absence of enterprise IT/IA research
+    \end{itemize}
+  \end{block}
+
+  \vspace{0.2cm}
+  \textbf{Implication:} Organizations outside systems engineering lack experiential evidence to validate MBSE investment---creating rational hesitation that perception data can help inform.
+\end{frame}
+
+% SLIDE 27: Adoption Barriers Evidence
+\begin{frame}[allowframebreaks]{Literature Review: Perceptions Drive Adoption}
   \begin{block}{Within Systems Engineering (Call et al. 2024)}
-    Diffusion of Innovations framework applied to MBSE adoption. Perceptions of compatibility, complexity, and trialability mediate adoption decisions among systems engineering professionals.
+    Diffusion of Innovations framework applied to MBSE adoption. Perceptions of compatibility, complexity, and trialability mediate adoption decisions among systems engineering professionals. MBSE characterized as a ``preventative innovation'' whose advantages derive from preventing problems rather than producing visible new benefits.
   \end{block}
 
   \begin{block}{Organizational Structure (Henderson \& Salado 2024)}
@@ -429,9 +501,52 @@ Madison, South Dakota, United States}
   \begin{block}{Awareness Deficits (Henderson, McDermott \& Salado 2024)}
     22\% of systems engineering professionals cannot clearly define MBSE. Awareness deficits persist even within the originating discipline---raising the question of whether similar or greater barriers exist in domains that have never encountered these methodologies.
   \end{block}
+
+  \begin{block}{Parallel Cybersecurity Adoption Research}
+    Hasani (2023), Alghamdi (2023), and Anthony (2024) independently applied the same adoption theories in cybersecurity contexts---demonstrating theoretical compatibility despite practical isolation between fields.
+  \end{block}
 \end{frame}
 
-% SLIDE 25: Literature Review - Cross-Disciplinary Transfer
+% SLIDE 28: Compliance Imperative
+\begin{frame}[allowframebreaks]{Literature Review: The Compliance Imperative}
+  \begin{block}{Frameworks Require What Practices Cannot Deliver}
+    SP~800-53 Rev 5 mandates controls requiring enterprise architecture capabilities: PL-2 (security plans), PL-8 (security architecture), PM-7 (enterprise architecture), CM-2 (baselines), CM-8 (component inventory), SA-17 (design specifications). Each demands documentation accuracy that organizations demonstrably lack.
+  \end{block}
+
+  \begin{block}{Emerging Compliance Automation}
+    \begin{itemize}
+      \item Santilli (2023): Defined continuous compliance with 13 requirements
+      \item Angermeir (2024): Design science for continuous security compliance
+      \item NIST OSCAL: Machine-readable compliance formats---aligns with DE emphasis on machine-readable documentation
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Parallel Tracks Without Convergence}
+    Compliance researchers build knowledge graphs and automated verification. DE researchers develop model-based approaches and digital threads. Both address documentation accuracy and traceability. Neither has systematically explored integration.
+  \end{block}
+\end{frame}
+
+% SLIDE 29: Digital Twins as Emerging Security Tools
+\begin{frame}[allowframebreaks]{Literature Review: Digital Twins for Security}
+  \begin{block}{Maturing Research Area}
+    Multiple systematic reviews confirm sufficient research volume to warrant meta-analysis: Alcaraz \& L\'{o}pez (2022, 300+ citations), El Hajj (2024, 67 papers), Alhumam (2025), Jeremiah (2024), Qureshi (2025).
+  \end{block}
+
+  \begin{block}{Security Applications}
+    \begin{itemize}
+      \item SOC analyst training through digital twin-based cyber ranges (Vielberth 2021)
+      \item Enterprise security posture management (Dietz \& Pernul 2020)
+      \item Threat modeling across cyber-physical system lifecycles (Erceylan 2025)
+      \item Incident detection and response for critical infrastructure (Kampourakis 2025)
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Disconnected from Digital Engineering}
+    Research explores digital twins as isolated security tools without embedding them within the integrated DE framework (MBSE + digital threads + PLM). Whether integration produces greater value than isolated implementations remains an open question.
+  \end{block}
+\end{frame}
+
+% SLIDE 30: Cross-Disciplinary Transfer
 \begin{frame}[allowframebreaks]{Literature Review: Cross-Disciplinary Transfer}
   \begin{block}{Barriers to Transfer Beyond Defense/Aerospace}
     \begin{itemize}
@@ -451,7 +566,28 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 26: Research Design Overview
+% SLIDE 31: Research Gaps Summary
+\begin{frame}[allowframebreaks]{Literature Review: Research Gaps Summary}
+  \begin{table}[H]
+    \begin{scriptsize}
+      \begin{tabular}{@{}p{1.1in}p{1.5in}p{1.5in}@{}}
+        \toprule
+        \textbf{Domain} & \textbf{Gap} & \textbf{Implication} \\
+        \midrule
+        MBSE for Enterprise IT & One study applying MBSE to enterprise IT & Foundation research required \\
+        MBSE Adoption Evidence & Adoption studies limited to SE populations & Perception measurement needed \\
+        Digital Threads & No research on traceability for IT/IA & Conceptual validation needed \\
+        Digital Twin & Security research but no enterprise IT integration & Application studies needed \\
+        ITSM Integration & No frameworks integrating DE with ITIL & Integration research required \\
+        Compliance Automation & DE and compliance research on parallel tracks & Integration research needed \\
+        Professional Perceptions & Unknown awareness among IT/IA professionals & \textbf{This research addresses} \\
+        \bottomrule
+      \end{tabular}
+    \end{scriptsize}
+  \end{table}
+\end{frame}
+
+% SLIDE 32: Research Design Overview
 \section{Research Methodology}
 \begin{frame}[allowframebreaks]{Research Design Overview}
   \begin{block}{Quantitative Cross-Sectional Survey Design}
@@ -467,7 +603,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 27: Methodology Justification
+% SLIDE 33: Methodology Justification
 \begin{frame}[allowframebreaks]{Methodology Justification}
   \begin{block}{Why Perceptions Matter}
     Technology Acceptance Model research demonstrates that perceived value influences adoption decisions regardless of demonstrated actual value. Professionals who do not perceive value will not advocate for adoption.
@@ -483,7 +619,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 28: Research Lifecycle
+% SLIDE 34: Research Lifecycle
 \begin{frame}[allowframebreaks]{Systems Engineering Research Lifecycle}
   \begin{enumerate}
     \item \textbf{Strategic Phase:} Hypothesis, capabilities, constraints, goals, stakeholders
@@ -495,7 +631,7 @@ Madison, South Dakota, United States}
   \end{enumerate}
 \end{frame}
 
-% SLIDE 29: Target Population
+% SLIDE 35: Target Population
 \begin{frame}[allowframebreaks]{Target Population and Sampling}
   \begin{block}{Target Population}
     Professionals actively working in IT and Information Assurance roles: IT service delivery, infrastructure management, security operations, compliance management, security architecture.
@@ -511,7 +647,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 30: Sample Size
+% SLIDE 36: Sample Size
 \begin{frame}[allowframebreaks]{Sample Size Determination}
   \begin{block}{Statistical Requirements}
     Target: 95\% confidence level with 5\% margin of error
@@ -525,12 +661,12 @@ Madison, South Dakota, United States}
       \item Minimum required: 385 completed responses
       \item Target with oversampling: 450 completed responses
       \item Oversampling accommodates 10-15\% incomplete response rates
-      \item Requires distribution to approximately 1,500--1,800 professionals
+      \item Requires distribution to approximately 1,500--2,000 professionals
     \end{itemize}
   \end{block}
 \end{frame}
 
-% SLIDE 31: Survey Structure
+% SLIDE 37: Survey Structure
 \section{Survey Instrument}
 \begin{frame}[allowframebreaks]{Survey Instrument Structure}
   \begin{block}{27 Questions Across Six Sections}
@@ -548,7 +684,7 @@ Madison, South Dakota, United States}
   \textbf{Estimated Completion Time:} Approximately 10 minutes
 \end{frame}
 
-% SLIDE 32: Question Formats
+% SLIDE 38: Question Formats
 \begin{frame}[allowframebreaks]{Question Format and Scale Selection}
   \begin{block}{Five-Point Likert Scale}
     \textbf{Familiarity Scale:} Not at all familiar \(\rightarrow\) Extremely familiar
@@ -566,7 +702,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 33: Likert Scale Analytical Treatment
+% SLIDE 39: Likert Scale Analytical Treatment
 \begin{frame}[allowframebreaks]{Likert Scale Analytical Treatment}
   \begin{block}{The Ordinal--Interval Debate}
     Longstanding methodological debate regarding whether Likert responses constitute ordinal or interval data. Norman (2010) and subsequent research demonstrate that parametric methods yield valid results with Likert data even when distributional assumptions are violated.
@@ -581,7 +717,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 34: Research Question Mapping
+% SLIDE 40: Research Question Mapping
 \begin{frame}[allowframebreaks]{Survey-to-Research Question Mapping}
   \begin{table}[H]
     \begin{scriptsize}
@@ -604,7 +740,7 @@ Madison, South Dakota, United States}
   Each question maintains explicit traceability to research questions within the systems engineering model.
 \end{frame}
 
-% SLIDE 35: Data Analysis - Descriptive
+% SLIDE 41: Data Analysis - Descriptive
 \begin{frame}[allowframebreaks]{Data Analysis: Descriptive and Comparative}
   \begin{block}{Descriptive Statistics}
     \begin{itemize}
@@ -623,7 +759,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 36: Data Analysis - Inferential and Error Management
+% SLIDE 42: Data Analysis - Inferential and Error Management
 \begin{frame}[allowframebreaks]{Data Analysis: Inferential Testing and Error Management}
   \begin{block}{Inferential Statistical Tests}
     \begin{itemize}
@@ -641,7 +777,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 37: Research Timeline
+% SLIDE 43: Research Timeline
 \section{Timeline}
 \begin{frame}[allowframebreaks]{Research Timeline: 22-Month Schedule}
   \begin{center}
@@ -670,7 +806,7 @@ Madison, South Dakota, United States}
   \end{center}
 \end{frame}
 
-% SLIDE 38: Timeline Details
+% SLIDE 44: Timeline Details
 \begin{frame}[allowframebreaks]{Timeline Phase Details}
   \begin{block}{Phase 1--2: Proposal (May 2025 -- March 2026)}
     Committee formation (completed January 2026), proposal development, iterative refinement, proposal defense
@@ -685,7 +821,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 39: Validity and Reliability
+% SLIDE 45: Validity and Reliability
 \begin{frame}[allowframebreaks]{Validity and Reliability}
   \begin{block}{Content Validity}
     Systematic mapping of survey questions to research questions; alignment with established Digital Engineering frameworks from INCOSE, NASA, and DoD
@@ -700,7 +836,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 40: Pilot Testing
+% SLIDE 46: Pilot Testing
 \begin{frame}[allowframebreaks]{Pilot Testing and Instrument Refinement}
   \begin{block}{Spring 2024 Pilot Study}
     \small{An earlier version of the instrument was administered to IT and information assurance professionals during the Spring 2024 semester. The pilot study evaluated:}
@@ -719,7 +855,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 41: Response Bias Mitigation
+% SLIDE 47: Response Bias Mitigation
 \begin{frame}[allowframebreaks]{Response Bias Mitigation}
   \begin{block}{Proactive Mitigation Strategies}
     \begin{itemize}
@@ -737,7 +873,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 42: Limitations
+% SLIDE 48: Limitations
 \begin{frame}[allowframebreaks]{Research Limitations}
   \begin{itemize}
     \item Non-probability sampling limits generalizability to broader population
@@ -749,7 +885,7 @@ Madison, South Dakota, United States}
   \end{itemize}
 \end{frame}
 
-% SLIDE 43: Expected Contributions - Academic
+% SLIDE 49: Expected Contributions - Academic
 \section{Expected Contributions}
 \begin{frame}[allowframebreaks]{Expected Contributions: Academic}
   \begin{block}{Addressing the Literature Gap}
@@ -765,7 +901,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 44: Expected Contributions - Industry
+% SLIDE 50: Expected Contributions - Industry
 \begin{frame}[allowframebreaks]{Expected Contributions: Industry}
   \begin{block}{Industry Benefits}
     \begin{itemize}
@@ -777,7 +913,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 45: Expected Contributions - Commonwealth and Society
+% SLIDE 51: Expected Contributions - Commonwealth and Society
 \begin{frame}[allowframebreaks]{Expected Contributions: Commonwealth and Society}
   \begin{block}{Commonwealth Benefits}
     \begin{itemize}
@@ -786,7 +922,6 @@ Madison, South Dakota, United States}
       \item Reduces compliance verification burden while improving documentation currency
     \end{itemize}
   \end{block}
-
   \begin{block}{Societal Benefits}
     \begin{itemize}
       \item Potentially enable better security capabilities for organizations serving underserved populations
@@ -796,7 +931,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 46: Ethical Considerations
+% SLIDE 52: Ethical Considerations
 \begin{frame}[allowframebreaks]{Ethical Considerations}
   \begin{block}{Human Subjects Protection}
     \begin{itemize}
@@ -812,7 +947,7 @@ Madison, South Dakota, United States}
   IRB approval will proceed after successful proposal defense.
 \end{frame}
 
-% SLIDE 47: Summary
+% SLIDE 53: Summary
 \begin{frame}[allowframebreaks]{Proposal Summary}
   \begin{block}{Research Purpose}
     Investigate whether IT and Information Assurance professionals recognize potential value in Digital Engineering capabilities for their work
@@ -827,9 +962,9 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 48: Questions
+% SLIDE 54: Questions
 \section{Q\&A}
-\begin{frame}[allowframebreaks]{Questions and Discussion}
+\begin{frame}{Questions and Discussion}
   \begin{center}
     \vspace{1cm}
     {\Large Thank you for attending.}
@@ -847,7 +982,7 @@ Madison, South Dakota, United States}
   \end{center}
 \end{frame}
 
-% SLIDE 49: Thank You
+% SLIDE 55: Thank You
 \begin{frame}{Thank You}
   \begin{center}
     \vspace{0.5cm}
