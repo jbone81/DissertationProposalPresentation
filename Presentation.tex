@@ -46,13 +46,13 @@ Madison, South Dakota, United States}
 % SLIDE 3: About Me
 \begin{frame}{/whois John Bonar}
   \begin{itemize}
-    \item Seven Degrees and Certifications from Dakota State University
+    \item Seven Degrees and Certificates from Dakota State University
     \item Senior Manager Solution Engineering \& Architecture, Program Work Environments, Digital Technology at Collins Aerospace (RTX)
     \item Daily experience with high-compliance environments: DAAG, JSIG, CNSS, CSFC, CDS
     \item Research Focus: Systems Engineering for IT and Information Assurance
     \item First Computer: Commodore 64K
     \item First computer job: 1994 CCS Computers Burlington, Iowa
-    \item Caught a 30 day ban from Ames Lab at age 15 for locking up a Cray YMP2E with a massive ray tracing simulation
+    \item Caught a 30 day ``ban'' from DoE Ames Lab at age 15 for locking up a Cray YMP2E with a massive ray tracing simulation
     \item Is legally Darth Vader
   \end{itemize}
 \end{frame}
@@ -106,7 +106,7 @@ Madison, South Dakota, United States}
   \end{block}
 \end{frame}
 
-% SLIDE 8: Information Assurance Challenges
+% SLIDE 8: Information Assurance Challenges And Presentation Context of Viewpoint
 \begin{frame}[allowframebreaks]{Information Assurance Practice Challenges}
   \begin{block}{Key Frameworks}
     NIST SP 800-37 Rev 2: Risk Management Framework \\ ISO 31000: Risk Management \\ NIST Cybersecurity Framework 2.0
@@ -114,6 +114,9 @@ Madison, South Dakota, United States}
 
   \vspace{0.2cm}
   \textbf{Critical Challenge:} The RMF continuous monitoring requirement exposes limitations of document-centric approaches most directly. Organizations attempting continuous monitoring through manual processes discover the labor exceeds available resources.
+
+  \vspace{0.2cm}
+  \textbf{Context of This Presentation:} This presentation and dissertation proposal focuses on contextual dialog that aligns to NIST Special Publication 800-37 Revision 2: Risk Management Framework. The existing gaps and challenges apply equally to all compliance frameworks that demand documentation accuracy and traceability.
 \end{frame}
 
 % SLIDE 9: Expanding Compliance Landscape
@@ -122,15 +125,19 @@ Madison, South Dakota, United States}
     Added Govern Function addressing leadership engagement and risk strategy. Broadened scope beyond critical infrastructure to all organizations. Maps to SP~800-53 controls through Informative References.
   \end{block}
 
-  \begin{block}{SP 800-171 Revision 3 (May 2024)}
-    Protects Controlled Unclassified Information in nonfederal systems. Restructured from fourteen to seventeen security requirement families. 97 requirements encompassing 266 individual control items and 49 Organization-Defined Parameters.
+  \begin{block}{SP 800-171 Revision 3}
+    Protects Controlled Unclassified Information in nonfederal systems. Restructured from fourteen to seventeen security control families, 97 control requirements, 422 individual control assessment objectives and 49 Organization-Defined Parameters.
   \end{block}
 
-  \begin{block}{SP 800-172: Enhanced Security Requirements}
-    Thirty-five enhanced requirements against Advanced Persistent Threats. Three-pillar defense: penetration-resistant architecture, damage-limiting operations, and cyber resiliency.
+  \vspace{1.0cm}
+
+  \begin{block}{SP 800-172 Revision 3}
+    One hundred and two enhanced requirements that build upon SP~800-171 controls. Focus on advanced persistent threats and sophisticated adversaries. Emphasizes proactive defense, continuous monitoring, centralized inventory \& component management, Implementation of Software Bill of Materials (SBOM) \& Hardware Bill of Materials (HBM), component validation, cybersecurity supply chain risk management, secure software development, firmware management and verification, active cyber defensive practices, resilience, and rapid incident response capabilities.
   \end{block}
 
-  \begin{block}{CMMC 2.0 (December 2024)}
+  \vspace{1.0cm}
+
+  \begin{block}{CMMC}
     Three-tiered certification: Level 1 self-assessment, Level 2 third-party assessment (SP~800-171), Level 3 government assessment (SP~800-172). Shifts from self-attestation to verified compliance. Full implementation expected by November 2028.
   \end{block}
 
@@ -290,16 +297,16 @@ Madison, South Dakota, United States}
 \begin{frame}[allowframebreaks]{Pillar 1: Model-Based Systems Engineering}
   \begin{small}
     \begin{block}{Definition}
-      MBSE shifts from document-centric to model-centric approaches. Models become the authoritative representation of system architecture, requirements, behavior, and interfaces using SysML/UML modeling languages.
+      MBSE shifts from document-centric to model-centric approaches. Models become the authoritative representation of system architecture, requirements, behavior, design, configuration, and interfaces using SysML/UML modeling languages.
     \end{block}
-
+    \vspace{1.0cm}
     \textbf{Standards and Tools:}
     \begin{itemize}
       \item SysML v1 \(\rightarrow\) v2 evolution with textual notation and API standardization
-      \item Commercial: Cameo Systems Modeler, IBM Rhapsody
+      \item Commercial: 3DS Cameo, IBM Rhapsody, Sparx Enterprise Architect
       \item Open Source: Eclipse Papyrus, Capella, SysON
     \end{itemize}
-
+    \vspace{1.5cm}
     \textbf{Application to IA/IT:}
     \begin{itemize}
       \item Security architectures with explicit control-asset-threat relationships
@@ -512,8 +519,10 @@ Madison, South Dakota, United States}
 % SLIDE 28: Compliance Imperative
 \begin{frame}[allowframebreaks]{Literature Review: The Compliance Imperative}
   \begin{block}{Frameworks Require What Practices Cannot Deliver}
-    SP~800-53 Rev 5 mandates controls requiring enterprise architecture capabilities: PL-2 (security plans), PL-8 (security architecture), PM-7 (enterprise architecture), CM-2 (baselines), CM-8 (component inventory), SA-17 (design specifications). Each demands documentation accuracy that organizations demonstrably lack.
+    SP~800-53 Rev 5 mandates controls requiring enterprise architecture capabilities: PL-2 (security plans), PL-8 (security architecture), PM-7 (enterprise architecture), CM-2 (baselines), CM-8 (component inventory), and SA-17 (design specifications). Each demands documentation accuracy that organizations demonstrably lack when implementing these controls within their systems that provide real-time or near real-time visibility, traceability, and accuracy.
   \end{block}
+
+  \vspace{1.5cm}
 
   \begin{block}{Emerging Compliance Automation}
     \begin{itemize}
@@ -522,6 +531,8 @@ Madison, South Dakota, United States}
       \item NIST OSCAL: Machine-readable compliance formats---aligns with DE emphasis on machine-readable documentation
     \end{itemize}
   \end{block}
+
+  \vspace{2.0cm}
 
   \begin{block}{Parallel Tracks Without Convergence}
     Compliance researchers build knowledge graphs and automated verification. DE researchers develop model-based approaches and digital threads. Both address documentation accuracy and traceability. Neither has systematically explored integration.
